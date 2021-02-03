@@ -4,7 +4,7 @@ services:
   app:
     build: .
     entrypoint: ./.docker/entrypoint.sh
-    container_name: esquenta-imersao-fullcycle-nest-api
+    container_name: fullcycle-nest-api
     ports:
       - 3000:3000
     volumes:
@@ -15,10 +15,10 @@ services:
     restart: always
     tty: true
     volumes:
-      - .docker/dbdatabbx:/var/lic/postgresql/data
+      - .docker/dbdata:/var/lib/postgresql/data
     environment: 
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=bbx
+      - POSTGRES_DB=dbnestjs
   
   pgadmin:
     image: dpage/pgadmin4
