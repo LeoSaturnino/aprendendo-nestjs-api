@@ -19,7 +19,7 @@ export class CreateProductsTable1612376429666 implements MigrationInterface {
                         type: 'varchar'
                     },
                     {
-                        name: 'pryce',
+                        name: 'price',
                         type: 'double precision'
                     },
                     {

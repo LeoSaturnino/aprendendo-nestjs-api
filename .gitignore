@@ -2,6 +2,9 @@
 /dist
 /node_modules
 
+# Banco de Dados
+/.docker/dbdata
+
 # Logs
 logs
 *.log
